@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1207783860 source:f:\programmes\c\poker xp modif\combinaison.c
+	"main.h"
+
+1207784714 f:\programmes\c\poker xp modif\main.h
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<string.h>
+	"combinaison.h"
+	"affichage.h"
+	"jeu_cartes.h"
+	"gagne_ou_perdu.h"
+	"highscores.h"
+
+1203028920 f:\programmes\c\poker xp modif\combinaison.h
+
+1199869024 f:\programmes\c\poker xp modif\affichage.h
+
+1194141716 f:\programmes\c\poker xp modif\jeu_cartes.h
+
+1203028920 f:\programmes\c\poker xp modif\gagne_ou_perdu.h
+
+1199113932 f:\programmes\c\poker xp modif\highscores.h
+
+1207783906 source:f:\programmes\c\poker xp modif\gagne_ou_perdu.c
+	"main.h"
+
+1203028758 source:f:\programmes\c\poker xp modif\jeu_cartes.c
+	"main.h"
+
+1207783984 source:f:\programmes\c\poker xp modif\affichage.c
+	"main.h"
+
+1207784162 source:f:\programmes\c\poker xp modif\highscores.c
+	"main.h"
+
+1207784308 source:f:\programmes\c\poker xp modif\main.c
+	"main.h"
+
