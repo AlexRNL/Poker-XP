@@ -1,24 +1,24 @@
-		Règles du poker solo.
+		RÃ¨gles du poker solo.
 
 Obtenez la meilleure combinaison du poker avec cinq cartes !!
 
-1. Entrez d'abord votre nom, puis la somme que vous désirez miser.
-2. Voilà vos cartes ; tapez un à un le numéro des cartes que vous
+1. Entrez d'abord votre nom, puis la somme que vous dÃ©sirez miser.
+2. VoilÃ  vos cartes ; tapez un Ã  un le numÃ©ro des cartes que vous
    souhaitez garder. Validez en entrant -1.
-3. Les cartes que vous avez décidé de passer sont remplacées par des
+3. Les cartes que vous avez dÃ©cidÃ© de passer sont remplacÃ©es par des
    nouvelles. L'ordinateur vous indique votre combinaison.
 4. Vous remportez de l'argent si votre combinaison est assez bonne.
 
 
 Combinaisons :
-Quinte Flush Royale	<=>	100 * Mise.
-Quinte Flush		<=>	50 * Mise.
-Carré			<=>	20 * Mise.
-Full			<=>	10 * Mise.
-Couleur			<=>	8 * Mise.
-Suite			<=>	5 * Mise.
-Brelan			<=> 	3 * Mise.
-Double Paire		<=>	2 * Mise.
+Quinte Flush Royale		<=>	100 * Mise.
+Quinte Flush			<=>	50 * Mise.
+CarrÃ©					<=>	20 * Mise.
+Full					<=>	10 * Mise.
+Couleur					<=>	8 * Mise.
+Suite					<=>	5 * Mise.
+Brelan					<=>	3 * Mise.
+Double Paire			<=>	2 * Mise.
 Paire (Valet ou plus)	<=>	1 * Mise.
-Paire (10 ou moins)	<=>	0 * Mise.
-Carte Haute		<=>	0 * Mise.
+Paire (10 ou moins)		<=>	0 * Mise.
+Carte Haute				<=>	0 * Mise.

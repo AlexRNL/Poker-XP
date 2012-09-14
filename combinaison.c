@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*Contient les fonctions qui permmettent de détecter la combinaison*/
+/*Contient les fonctions qui permmettent de dÃ©tecter la combinaison*/
 
 /*Fonction permettant la detection de la meilleure combinaison possible avec 5 cartes.*/
 void combinaison (Carte donne[5], char meilleure_combinaison[34])
@@ -30,7 +30,7 @@ void combinaison (Carte donne[5], char meilleure_combinaison[34])
                            if ((nombre_de[1] == 1) && (nombre_de[13] == 1)) {sprintf(meilleure_combinaison, "Quinte Flush Royale !!!!") ;} //S'il y a un Roi et un As.
                                              else {sprintf(meilleure_combinaison, "Quinte Flush !!") ;} //Sinon.
      }
-     else if (carre(nombre_de, meilleure_combinaison) == 1) {} //Si on a un carré.
+     else if (carre(nombre_de, meilleure_combinaison) == 1) {} //Si on a un carrÃ©.
      else if ((brelan(nombre_de, meilleure_combinaison) == 1) && (paire(nombre_de, meilleure_combinaison) == 1)) //Si on a un full
      {
           for (i=1 ; i<14 ; i++)
@@ -83,7 +83,7 @@ int suite (Carte donne[5])
 {
     int res = 1, nb_ech, i ;
     Carte donne_classee[5], intermediaire ;
-    for (i=0 ; i<5 ; i++) //On recopie les cartes données dans un nouveau tableau.
+    for (i=0 ; i<5 ; i++) //On recopie les cartes donnï¿½es dans un nouveau tableau.
     {
         donne_classee[i] = donne[i] ;
     }
@@ -116,11 +116,11 @@ int suite (Carte donne[5])
 int couleur (int coeur, int pique, int carreau, int trefle)
 {
     int res = 0 ;
-    if ((coeur == 5) || (pique == 5) || (carreau == 5) || (trefle == 5)) {res = 1 ;} //On regarde si une couleur apparaît 5 fois.
+    if ((coeur == 5) || (pique == 5) || (carreau == 5) || (trefle == 5)) {res = 1 ;} //On regarde si une couleur apparaï¿½t 5 fois.
     return res ;
 }
 
-/*Fonction qui indique si les cartes font un carré*/
+/*Fonction qui indique si les cartes font un carrÃ©*/
 int carre (int nombre_de[14], char meilleure_combinaison[34])
 {
     int i, res = 0 ;
@@ -163,7 +163,7 @@ int paire (int nombre_de[14], char meilleure_combinaison[34])
     {
         if (nombre_de[i] == 2) //On regarde si une valeur apparait 2 fois.
         {
-                         nom_cartes(i, valeur_paire[res]) ; //Comme il peut y avoir deux paires, on prévoit un tableau de chaîne de caractères.
+                         nom_cartes(i, valeur_paire[res]) ; //Comme il peut y avoir deux paires, on prÃ©voit un tableau de chaÃ®ne de caractÃ¨res.
                          res++ ;
         }
         switch (res)

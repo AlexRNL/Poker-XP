@@ -1,20 +1,20 @@
 /*Programme qui permet de jouer au poker seul :
-            5 cartes distribuées, le joueur choisit celles qu'il garde.
-            On redistribue les cartes non gardées.
-            On détecte la combinaison pour indiquer au joueur ce qu'il a gagné.
+            5 cartes distribuÃ©es, le joueur choisit celles qu'il garde.
+            On redistribue les cartes non gardÃ©es.
+            On dÃ©tecte la combinaison pour indiquer au joueur ce qu'il a gagnÃ©.
 ATTENTION : JEU DE 52 CARTES
-                                                    Alex Barféty, 14/02/2008*/
+                                                    Alex BarfÃ©ty, 14/02/2008*/
 
 #include "main.h"
 
 int main(int argc, char *argv[])
 {
-    const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; // e <=> 'é' ; ee <=> 'è' ; eee <=> 'ê' ; a <=> 'à'
+    const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; // e <=> 'Ã©' ; ee <=> 'Ã¨' ; eee <=> 'Ãª' ; a <=> 'Ã '
 
     //     DECLARATIONS DES VARIABLES
 
-    Carte jeu1[52], jeu[52], donne[5] ; // jeu1 <=> jeu avec les cartes classées. // jeu <=> jeu avec les cartes mélangées.
-    int rate = 0, tours = 0,  i = 0, j = 0, cartes_gardees[5] = {0} ; // rate <=> compte le nombre de fois où le joueur fait une mauvaise mise.
+    Carte jeu1[52], jeu[52], donne[5] ; // jeu1 <=> jeu avec les cartes classï¿½es. // jeu <=> jeu avec les cartes mÃ©langÃ©es.
+    int rate = 0, tours = 0,  i = 0, j = 0, cartes_gardees[5] = {0} ; // rate <=> compte le nombre de fois oÃ¹ le joueur fait une mauvaise mise.
     double argent = ARGENT_DEBUT, mise = 0, maximum = ARGENT_DEBUT, scores[5] = {0} ;
     char continuer = 'o', nom_joueur[13] = "", meilleure_combinaison[34] = "", numero[10] = "", nom_score[5][13] = {{""}}, jetable[13] = "" ;
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
     srand(time(NULL)) ;
     creer(jeu1) ;
-    melanger(jeu, jeu1) ; //On mélange le jeu.
+    melanger(jeu, jeu1) ; //On mï¿½lange le jeu.
 
     //     OUVERTURE DU FICHIER highscores.txt ET TEST
 
@@ -47,14 +47,14 @@ int main(int argc, char *argv[])
     fgets(nom_joueur, 12, stdin) ;
     do
     {
-                if (argent > maximum) {maximum = argent ;} //On mets à jour le maximum.
+                if (argent > maximum) {maximum = argent ;} //On met ï¿½ jour le maximum.
                 tours++ ; //Nombre de tours.
                 rate = 0 ;
                 do
                 {
                             system ("CLS") ;
                             printf("\t\t\t\t\tPOKER\n\n\n\t%s\n", nom_joueur) ;
-                            switch (rate) //Remarques si l'entrée est fausse
+                            switch (rate) //Remarques si l'entrï¿½e est fausse
                             {
                                    case 0 : printf ("\n\n\n\n") ;
                                             break ;
@@ -67,12 +67,12 @@ int main(int argc, char *argv[])
                             }
                             printf("\n\tVous avez %3.2lf euro(s).\n\tCombien misez vous ? ", argent) ;
                             scanf("%lf", &mise) ;
-                            arrondir(&mise, 2) ; //On arrondi le résultat pour éviter les erreurs des précision des double.
+                            arrondir(&mise, 2) ; //On arrondi le rÃ©sultat pour Ã©viter les erreurs des prÃ©cision des double.
                             rate++ ; //On compte le nombre de fois ou le joueur rate sa mise.
-                } while ((mise<=0) || (mise>argent)) ; //On vérifie la validité de l'entrée.
+                } while ((mise<=0) || (mise>argent)) ; //On vÃ©rifie la validitÃ© de l'entrï¿½e.
                 argent -= mise ;
                 distribuer1(jeu, donne) ; //On distribue 5 cartes.
-                combinaison(donne, meilleure_combinaison) ; //On détecte la combinaison.
+                combinaison(donne, meilleure_combinaison) ; //On dÃ©tecte la combinaison.
                 i = 0 ;
                 do
                 {
@@ -115,9 +115,9 @@ int main(int argc, char *argv[])
                          while (getchar() != '\n') ;
                     } while ((cartes_gardees[i] != 1) && (cartes_gardees[i] != 2) && (cartes_gardees[i] != 3) && (cartes_gardees[i] != 4) && (cartes_gardees[i] != 5) && (cartes_gardees[i] != -1)) ;
                 i++ ;
-                } while ((cartes_gardees[i-1] != -1) && (i<5)) ;
+                } while ((cartes_gardees[i-1] != -1) && (i < 5)) ;
                 distribuer2(jeu, donne, cartes_gardees) ; //On remplace les cartes qu'on ne garde pas.
-                combinaison(donne, meilleure_combinaison) ; //On détecte la nouvelle combinaison.
+                combinaison(donne, meilleure_combinaison) ; //On dÃ©tecte la nouvelle combinaison.
                 system("CLS") ;
                 printf("\t\t\t\t\tPOKER\n\n\n\tArgent : %3.2lf euro(s).\n\tMise : %3.2lf euro(s)\n\n\n\n", fabs(argent), mise) ;
                 printf("\nVoici les cartes :\t\t") ;
@@ -133,9 +133,9 @@ int main(int argc, char *argv[])
     system("CLS") ;
     printf("\t\t\t\t\tPOKER\n\n\n\n\n\tVous avez perdu apr%cs %d tours !!\n\n\tMaximum atteint : %3.2lf euro(s).", ee, tours, maximum) ;
     if (highscores == NULL) {printf("Malheureusement, il ne vous est pas possible de consulter les meilleurs scores !!\n\n\n\n\n\n") ;}
-    else //Si on a accès aux meilleurs score :
+    else //Si on a accÃ¨s aux meilleurs score :
     {
-        rewind(highscores) ; //On revient au début du fichier :
+        rewind(highscores) ; //On revient au dÃ©but du fichier :
         for (i=0 ; i<5 ; i++)
         {
             fgets(nom_score[i], 100, highscores) ; //On enregistre les noms des gagnants dans un tableau.

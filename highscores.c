@@ -1,13 +1,13 @@
 #include "main.h"
 
-/*Fonction si l'utilisateur a fait un meilleur score, on réécrit tout le fichier highscore.*/
+/*Fonction si l'utilisateur a fait un meilleur score, on rÃ©Ã©crit tout le fichier highscore.*/
 void new_highscore (double maximum, double scores[5], char nom_score[5][13], char nom[13])
 {
      const char e = '\x82', eee = '\x88' ;
      int i, place = 0 ;
      FILE *highscores = NULL ;
      highscores = fopen("highscores.hsc", "w+") ;
-     if (highscores == NULL) //Si l'ouverture a échoué :
+     if (highscores == NULL) //Si l'ouverture a Ã©chouÃ© :
      {
                     printf("\n\nEn raison d'une erreur d'ouverture les meilleurs scores ne peuvent\n%ctre enregitr%c.", eee, e) ;
      }
@@ -34,7 +34,7 @@ void new_highscore (double maximum, double scores[5], char nom_score[5][13], cha
          print_highscore(scores, nom_score, place) ;
          fclose(highscores) ;
      }
-     //Afficher les highscores modifiés
+     //Afficher les highscores modifiÃ©s
 }
 
 /*Fonction si l'utilisateur n'a pas fait de meilleur score, on affiche juste les highscores.*/

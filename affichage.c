@@ -1,13 +1,13 @@
 #include "main.h"
 
-/*Contient les fonctions qui gèrent l'affichage, l'écriture des cartes dans des chaînes de caractères.*/
+/*Contient les fonctions qui gÃ¨rent l'affichage, l'Ã©criture des cartes dans des chaÃ®nes de caractÃ¨res.*/
 
 /*Fonction qui affiche un jeu de cartes*/
 void afficher (Carte jeu[], int nb_cartes)
 {
      int i ;
      char couleur_prov = ' ', valeur_prov[2] = "" ;
-     //On créé des variable pour contenir la valeur et la couleur de la carte à afficher.
+     //On crÃ©Ã© des variable pour contenir la valeur et la couleur de la carte Ã  afficher.
      for (i=0 ; i<nb_cartes ; i++)
      {
          switch (jeu[i].couleur)
@@ -43,7 +43,7 @@ void afficher (Carte jeu[], int nb_cartes)
      }
 }
 
-/*Fonction qui écrit dans une chaîne de caractère le nom de la carte (plusieurs cartes)*/
+/*Fonction qui Ã©crit dans une chaÃ®ne de caractÃ¨re le nom de la carte (plusieurs cartes)*/
 void nom_cartes(int valeur_carte, char nom[7])
 {
      switch (valeur_carte)
@@ -61,7 +61,7 @@ void nom_cartes(int valeur_carte, char nom[7])
      }
 }
 
-/*Fonction qui écrit dans une chaîne de caractère le nom de la carte (une seule carte)*/
+/*Fonction qui Ã©crit dans une chaÃ®ne de caractÃ¨re le nom de la carte (une seule carte)*/
 void nom_carte(int valeur_carte, char nom[6])
 {
      switch (valeur_carte)
