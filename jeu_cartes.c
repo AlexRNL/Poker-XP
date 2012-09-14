@@ -15,7 +15,7 @@ void creer (Carte jeu[52])
          jeu[i+25].valeur = i ;
          jeu[i+25].couleur = 'd' ; // d <=> diamonds (carreaux)
          jeu[i+38].valeur = i ;
-         jeu[i+38].couleur = 'c' ; // c <=> clubs (trêfles)
+         jeu[i+38].couleur = 'c' ; // c <=> clubs (trèfles)
      }
 }
 
