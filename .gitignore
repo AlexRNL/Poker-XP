@@ -10,3 +10,10 @@
 *.lai
 *.la
 *.a
+
+# Target folders
+Debug
+Release
+
+# Misc
+.settings
