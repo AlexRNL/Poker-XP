@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
     {
                  do
                  {
-                     system("CLS") ;
+                     CLEAR_CONSOLE();
                      printf("\n\n\tAttention, en raison d'une erreur d'ouverture les meilleurs scores\n\tne pourrons ni %ctre enregistr%cs ni %ctre affich%cs.\n\nVoulez continuer tout de m%cme ('o' ou 'n') ? ", eee, e, eee, e, eee) ;
                      scanf("%c", &continuer) ;
                      getchar() ;
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
     //     ON COMMENCE A JOUER
 
-    system("CLS") ;
+    CLEAR_CONSOLE();
     printf("\t\t\t\t\tPOKER\n\n\n\tVeuillez entrez votre nom de joueur (12 carct%cres max.) : ", ee) ;
     fgets(nom_joueur, 12, stdin) ;
     do
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
                 {
                     do
                     {
-                         system("CLS") ;
+                         CLEAR_CONSOLE();
                          printf("\t\t\t\t\tPOKER\n\n\tMise : %3.2lf euro(s)\n\nNum%cro de la carte :\t\t1.\t2.\t3.\t4.\t5.", mise, e) ;
                          printf("\nVoici les cartes :\t\t") ;
                          afficher(donne, 5) ;
@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
                 } while ((cartes_gardees[i-1] != -1) && (i < 5)) ;
                 distribuer2(jeu, donne, cartes_gardees) ; //On remplace les cartes qu'on ne garde pas.
                 combinaison(donne, meilleure_combinaison) ; //On détecte la nouvelle combinaison.
-                system("CLS") ;
+                CLEAR_CONSOLE();
                 printf("\t\t\t\t\tPOKER\n\n\n\tArgent : %3.2lf euro(s).\n\tMise : %3.2lf euro(s)\n\n\n\n", fabs(argent), mise) ;
                 printf("\nVoici les cartes :\t\t") ;
                 afficher(donne, 5) ;
@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
 
     //      FIN DU JEU
 
-    system("CLS") ;
+    CLEAR_CONSOLE();
     printf("\t\t\t\t\tPOKER\n\n\n\n\n\tVous avez perdu apr%cs %d tours !!\n\n\tMaximum atteint : %3.2lf euro(s).", ee, tours, maximum) ;
     if (highscores == NULL) {printf("Malheureusement, il ne vous est pas possible de consulter les meilleurs scores !!\n\n\n\n\n\n") ;}
     else //Si on a accès aux meilleurs score :

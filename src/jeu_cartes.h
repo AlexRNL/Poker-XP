@@ -1,6 +1,16 @@
 #ifndef DEF_JEU_CARTESH
 #define DEF_JEU_CARTESH
 
+
+/**
+ * Card structure
+ */
+typedef struct
+{
+        int valeur ;
+        char couleur ;
+} Carte ;
+
 //Prototype des fonctions :
 void creer (Carte jeu[52]) ;
 void melanger (Carte jeu[52], Carte jeu_classe[52]) ;

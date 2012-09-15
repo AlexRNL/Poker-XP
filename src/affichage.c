@@ -2,6 +2,12 @@
 
 /*Contient les fonctions qui gèrent l'affichage, l'écriture des cartes dans des chaînes de caractères.*/
 
+
+const char e = '\x82';
+const char ee = '\x8A';
+const char eee = '\x88';
+const char a = '\x85' ;
+
 /*Fonction qui affiche un jeu de cartes*/
 void afficher (Carte jeu[], int nb_cartes)
 {
