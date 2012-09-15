@@ -11,10 +11,10 @@
 
 //       DEFINE
 
-#define ARGENT_DEBUT 100 //€uro.
+#define ARGENT_DEBUT 100 //euro.
 
 //       STRUCTURE
-/*On défini une carte à jouer : une valeur et une couleur.*/
+/*On dÃ©fini une carte Ã  jouer : une valeur et une couleur.*/
 typedef struct
 {
         int valeur ;
@@ -31,6 +31,6 @@ typedef struct
 
 //      VARIABLES GLOBALES
 
-//const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; // e <=> 'é' ; ee <=> 'è' ; eee <=> 'ê' ; a <=> 'à'
+//const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; // e <=> 'Ã©' ; ee <=> 'Ã¨' ; eee <=> 'Ãª' ; a <=> 'Ã '
 
 #endif
