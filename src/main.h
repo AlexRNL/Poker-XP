@@ -1,5 +1,5 @@
-#ifndef DEF_MAINH
-#define DEF_MAINH
+#ifndef H_MAIN
+#define H_MAIN
 
 //       BIBLIOTHEQUES STANDARD
 
@@ -31,7 +31,13 @@ typedef struct
 #include "highscores.h"
 
 //      VARIABLES GLOBALES
-
-//const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; // e <=> 'é' ; ee <=> 'è' ; eee <=> 'ê' ; a <=> 'à'
+/** é */
+const char e = '\x82';
+/** è */
+const char ee = '\x8A';
+/** ê */
+const char eee = '\x88';
+/** à */
+const char a = '\x85' ;
 
 #endif

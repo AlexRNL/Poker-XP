@@ -124,7 +124,7 @@ int couleur (int coeur, int pique, int carreau, int trefle)
 int carre (int nombre_de[14], char meilleure_combinaison[34])
 {
     int i, res = 0 ;
-    char e = '\x82', valeur_carre[7] ;
+    char valeur_carre[7] ;
     for (i=1 ; i<14 ; i++)
     {
         if (nombre_de[i] == 4) //On regarde si une valeur apparait 4 fois.

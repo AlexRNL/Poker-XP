@@ -9,8 +9,6 @@ ATTENTION : JEU DE 52 CARTES
 
 int main(int argc, char *argv[])
 {
-    const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; // e <=> 'é' ; ee <=> 'è' ; eee <=> 'ê' ; a <=> 'à'
-
     //     DECLARATIONS DES VARIABLES
 
     Carte jeu1[52], jeu[52], donne[5] ; // jeu1 <=> jeu avec les cartes class�es. // jeu <=> jeu avec les cartes mélangées.

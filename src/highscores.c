@@ -3,7 +3,6 @@
 /*Fonction si l'utilisateur a fait un meilleur score, on réécrit tout le fichier highscore.*/
 void new_highscore (double maximum, double scores[5], char nom_score[5][13], char nom[13])
 {
-     const char e = '\x82', eee = '\x88' ;
      int i, place = 0 ;
      FILE *highscores = NULL ;
      highscores = fopen("highscores.hsc", "w+") ;
