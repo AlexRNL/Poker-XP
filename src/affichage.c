@@ -85,7 +85,7 @@ void nom_carte(int valeur_carte, char nom[6])
      }
 }
 
-//Fontion qui arrondi un double*/
+/*Fontion qui arrondi un double*/
 void arrondir (double *mise, int precision)
 {
      double test = pow(10, precision) * *mise ;
