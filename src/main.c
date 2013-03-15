@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
     //     DECLARATIONS DES VARIABLES
 
-    Carte jeu1[52], jeu[52], donne[5] ; // jeu1 <=> jeu avec les cartes class�es. // jeu <=> jeu avec les cartes mélangées.
+    Carte jeu1[52], jeu[52], donne[5] ; // jeu1 <=> jeu avec les cartes classées. // jeu <=> jeu avec les cartes mélangées.
     int rate = 0, tours = 0,  i = 0, j = 0, cartes_gardees[5] = {0} ; // rate <=> compte le nombre de fois où le joueur fait une mauvaise mise.
     double argent = ARGENT_DEBUT, mise = 0, maximum = ARGENT_DEBUT, scores[5] = {0} ;
     char continuer = 'o', nom_joueur[13] = "", meilleure_combinaison[34] = "", numero[10] = "", nom_score[5][13] = {{""}}, jetable[13] = "" ;
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     srand(time(NULL)) ;
     creer(jeu1) ;
-    melanger(jeu, jeu1) ; //On m�lange le jeu.
+    melanger(jeu, jeu1) ; //On mélange le jeu.
 
     //     OUVERTURE DU FICHIER highscores.txt ET TEST
 
@@ -45,14 +45,14 @@ int main(int argc, char *argv[])
     fgets(nom_joueur, 12, stdin) ;
     do
     {
-                if (argent > maximum) {maximum = argent ;} //On met � jour le maximum.
+                if (argent > maximum) {maximum = argent ;} //On met à jour le maximum.
                 tours++ ; //Nombre de tours.
                 rate = 0 ;
                 do
                 {
                             system ("CLS") ;
                             printf("\t\t\t\t\tPOKER\n\n\n\t%s\n", nom_joueur) ;
-                            switch (rate) //Remarques si l'entr�e est fausse
+                            switch (rate) //Remarques si l'entrée est fausse
                             {
                                    case 0 : printf ("\n\n\n\n") ;
                                             break ;
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
                             scanf("%lf", &mise) ;
                             arrondir(&mise, 2) ; //On arrondi le résultat pour éviter les erreurs des précision des double.
                             rate++ ; //On compte le nombre de fois ou le joueur rate sa mise.
-                } while ((mise<=0) || (mise>argent)) ; //On vérifie la validité de l'entr�e.
+                } while ((mise<=0) || (mise>argent)) ; //On vérifie la validité de l'entrée.
                 argent -= mise ;
                 distribuer1(jeu, donne) ; //On distribue 5 cartes.
                 combinaison(donne, meilleure_combinaison) ; //On détecte la combinaison.
