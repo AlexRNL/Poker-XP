@@ -20,11 +20,9 @@ void new_highscore (double maximum, double scores[5], char nom_score[5][13], cha
          {
              scores[i] = scores[i-1] ;
              sprintf(nom_score[i], "%s", nom_score[i-1]) ;
-             //*nom_score[i] = *nom_score[i-1] ;
          }
          scores[place] = maximum ;
          sprintf(nom_score[place], "%s", nom) ;
-         //*nom_score[place] = *nom ;
          printf("\n\n\t\t\t\tNOUVEAU MEILLEUR SCORE !!") ;
          for(i=0 ; i<5 ; i++)
          {
