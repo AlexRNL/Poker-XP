@@ -1,4 +1,4 @@
-#include "main.h"
+﻿#include "main.h"
 
 /*Fonction si l'utilisateur a fait un meilleur score, on réécrit tout le fichier highscore.*/
 void new_highscore (double maximum, double scores[5], char nom_score[5][13], char nom[13])

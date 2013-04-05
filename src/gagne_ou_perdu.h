@@ -1,4 +1,4 @@
-#ifndef GAGNE_OU_PERDUH
+﻿#ifndef GAGNE_OU_PERDUH
 #define GAGNE_OU_PERDUH
 
 //Prototype des fonctions

@@ -1,4 +1,4 @@
-#ifndef DEF_HIGHSCORESH 
+﻿#ifndef DEF_HIGHSCORESH 
 #define DEF_HIGHSCORESH
 
 //Prototype des fonctions :

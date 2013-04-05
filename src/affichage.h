@@ -1,4 +1,4 @@
-#ifndef DEF_AFFICHAGEH
+﻿#ifndef DEF_AFFICHAGEH
 #define DEF_AFFICHAGEH
 
 #ifdef _WIN32

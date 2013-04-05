@@ -1,4 +1,4 @@
-#include "main.h"
+﻿#include "main.h"
 
 /*Contient les fonctions qui permmettent de détecter la combinaison*/
 

@@ -1,4 +1,4 @@
-#include "main.h"
+﻿#include "main.h"
 
 /*       GAINS EN FONCTION DE LA COMBINAISON
 Quinte Flush Royale        <=> 100 * Mise.

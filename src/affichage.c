@@ -1,4 +1,4 @@
-#include "main.h"
+﻿#include "main.h"
 
 /*Contient les fonctions qui gèrent l'affichage, l'écriture des cartes dans des chaînes de caractères.*/
 

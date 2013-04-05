@@ -1,4 +1,4 @@
-/*Programme qui permet de jouer au poker seul :
+﻿/*Programme qui permet de jouer au poker seul :
             5 cartes distribuées, le joueur choisit celles qu'il garde.
             On redistribue les cartes non gardées.
             On détecte la combinaison pour indiquer au joueur ce qu'il a gagné.

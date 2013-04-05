@@ -1,4 +1,4 @@
-#ifndef DEF_COMBINAISONH 
+﻿#ifndef DEF_COMBINAISONH 
 #define DEF_COMBINAISONH
 
 //Prototype des fonctions :
