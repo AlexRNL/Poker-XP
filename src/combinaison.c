@@ -83,7 +83,7 @@ int suite (Carte donne[5])
 {
     int res = 1, nb_ech, i ;
     Carte donne_classee[5], intermediaire ;
-    for (i=0 ; i<5 ; i++) //On recopie les cartes donn�es dans un nouveau tableau.
+    for (i=0 ; i<5 ; i++) //On recopie les cartes données dans un nouveau tableau.
     {
         donne_classee[i] = donne[i] ;
     }
@@ -116,7 +116,7 @@ int suite (Carte donne[5])
 int couleur (int coeur, int pique, int carreau, int trefle)
 {
     int res = 0 ;
-    if ((coeur == 5) || (pique == 5) || (carreau == 5) || (trefle == 5)) {res = 1 ;} //On regarde si une couleur appara�t 5 fois.
+    if ((coeur == 5) || (pique == 5) || (carreau == 5) || (trefle == 5)) {res = 1 ;} //On regarde si une couleur apparaît 5 fois.
     return res ;
 }
 
