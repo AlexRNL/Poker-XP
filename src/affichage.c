@@ -12,7 +12,7 @@ const char a = '\x85' ;
 void afficher (Carte jeu[], int nb_cartes)
 {
      int i ;
-     char couleur_prov = ' ', valeur_prov[2] = "" ;
+     char couleur_prov = ' ', valeur_prov[3] = "" ;
      //On créé des variable pour contenir la valeur et la couleur de la carte à afficher.
      for (i=0 ; i<nb_cartes ; i++)
      {
@@ -31,8 +31,6 @@ void afficher (Carte jeu[], int nb_cartes)
          }
          switch (jeu[i].valeur)
          {
-                case 0 : sprintf(valeur_prov,"Rien") ; //S'il n'y a pas de carte.
-                         break ;
                 case 1 : sprintf (valeur_prov,"As") ; //Si la carte est un As.
                          break ;
                 case 11 : sprintf (valeur_prov,"V") ; //Si la carte est un valet.
