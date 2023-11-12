@@ -136,10 +136,10 @@ int main(void)
         rewind(highscores) ; //On revient au début du fichier :
         for (i=0 ; i<5 ; i++)
         {
-            fgets(nom_score[i], 100, highscores) ; //On enregistre les noms des gagnants dans un tableau.
+            fgets(nom_score[i], 13, highscores) ; //On enregistre les noms des gagnants dans un tableau.
             nom_score[i][strlen(nom_score[i])-1] = '\0' ;
             fscanf(highscores, "%lf", &scores[i]) ;//On enregistre les scores des gagnants dans un tableau.
-            fgets(jetable, 100, highscores) ;
+            fgets(jetable, 13, highscores) ;
         }
         fclose(highscores) ; //On ferme le fichier.
         if (maximum > scores[4]) {new_highscore(maximum, scores, nom_score, nom_joueur) ;} //On regarde si l'utilisateur a battu le 5e highscore.
