@@ -4,6 +4,7 @@
 void new_highscore (double maximum, double scores[5], char nom_score[5][13], char nom[13])
 {
      int i, place = 0 ;
+     char *nom_precedent = NULL ;
      FILE *highscores = NULL ;
      highscores = fopen("highscores.hsc", "w+") ;
      if (highscores == NULL) //Si l'ouverture a échoué :
@@ -16,10 +17,12 @@ void new_highscore (double maximum, double scores[5], char nom_score[5][13], cha
          {
              if (scores[i] >= maximum) {place = i+1 ;} //On cherche la place du nouveau meilleur score.
          }
+         nom_precedent = nom_score[5] ;
          for (i=4 ; place<i ; i--)
          {
              scores[i] = scores[i-1] ;
-             sprintf(nom_score[i], "%s", nom_score[i-1]) ;
+             sprintf(nom_score[i], "%s", nom_precedent) ;
+             nom_precedent = nom_score[i] ;
          }
          scores[place] = maximum ;
          sprintf(nom_score[place], "%s", nom) ;
