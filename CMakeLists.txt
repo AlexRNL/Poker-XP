@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.25)
+project(Poker-XP C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(${PROJECT_NAME})
+target_compile_options(${PROJECT_NAME} PRIVATE)
+add_subdirectory(src)

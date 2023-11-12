@@ -11,9 +11,8 @@
 *.la
 *.a
 
-# Target folders
-Debug
-Release
+# CMake build folder
+cmake-build-*/
 
-# Misc
-.settings
+# Idea configuration folder
+.idea/
