@@ -37,7 +37,8 @@ void new_highscore (double maximum, double scores[5], char nom_score[5][13], cha
 /*Fonction si l'utilisateur n'a pas fait de meilleur score, on affiche juste les highscores.*/
 void print_highscore (double scores[5], char nom_score[5][13], int position)
 {
-     int i, taille_nom ;
+     int i;
+     size_t taille_nom ;
      printf("\n\n\tMeilleurs scores :\n") ;
      for (i=0 ; i<5 ; i++)
      {

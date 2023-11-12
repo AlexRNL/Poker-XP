@@ -1,4 +1,4 @@
-﻿#include "main.h"
+#include "main.h"
 
 /*       GAINS EN FONCTION DE LA COMBINAISON
 Quinte Flush Royale        <=> 100 * Mise.
@@ -17,7 +17,7 @@ Carte Haute                <=> 0 * Mise.
 /*Fonction qui détermine le gain du joueur en fonction de la combinaison, cette fonction mets également l'argent du joueur à jour.*/
 void gagne (char meilleure_combinaison[34], double mise, double *p_argent)
 {
-     float gain = 0 ;
+     double gain = 0 ;
      switch (meilleure_combinaison[0]) //On regarde la première lettre de la chaîne de caractère.
      {
             case 'Q' : gain = royale_ou_pas(meilleure_combinaison) * mise ; //Cas pour une Quinte Flush (Royale ou pas).

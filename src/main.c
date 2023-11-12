@@ -1,4 +1,4 @@
-﻿/*Programme qui permet de jouer au poker seul :
+/*Programme qui permet de jouer au poker seul :
             5 cartes distribuées, le joueur choisit celles qu'il garde.
             On redistribue les cartes non gardées.
             On détecte la combinaison pour indiquer au joueur ce qu'il a gagné.
@@ -7,7 +7,7 @@ ATTENTION : JEU DE 52 CARTES
 
 #include "main.h"
 
-int main(int argc, char *argv[])
+int main(void)
 {
     //     DECLARATIONS DES VARIABLES
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
     //     INITIALISATION
 
-    srand(time(NULL)) ;
+    srand((unsigned int) time(NULL)) ;
     creer(jeu1) ;
     melanger(jeu, jeu1) ; //On mélange le jeu.
 
